@@ -19,7 +19,7 @@ def enviar_email(Nota, Cliente, Transportadora, EmailDestinatarios):
     msg['From'] = 'lucas.degrande@bmchyundai.com.br'
     Destinatarios = EmailDestinatarios.split(',')
     msg['To'] = ', '.join(Destinatarios)
-    password = 'wssbhscozclgrphe' 
+    password =  
     msg.add_header('Content-Type', 'text/html')
     msg.set_payload(corpo_email)
 

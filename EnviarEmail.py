@@ -32,7 +32,7 @@ def enviar_email(Nota, Cliente, Transportadora, EmailDestinatarios):
     print('Email enviado')
     
 planilha = pd.read_excel('TE_Disparo.xlsx')
-colunas_para_deletar = ['Cliente DOC','Cidade','UF','Ocorrencia','DATA','1º Data PENSKE','TE','Mínimo','Máximo','Sinal','NOTA.1','Observação','DATA ENTREGA','14.168.536/0001-25','14168536000125']
+colunas_para_deletar = ['Cliente DOC','Cidade','UF','Ocorrencia','Vendedor','DATA','1º Data PENSKE','TE','Mínimo','Máximo','Sinal','NOTA.1','Observação','DATA ENTREGA','14.168.536/0001-25','14168536000125']
 planilha = planilha.drop(columns=colunas_para_deletar)
 
 print(planilha)
